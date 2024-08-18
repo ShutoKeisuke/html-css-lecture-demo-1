@@ -1,0 +1,30 @@
+#top-scroll-icon {
+  background: #192F42;
+  border-radius: 50%;
+  bottom: 24px;
+  height: 60px;
+  opacity: 0;
+  position: fixed;
+  right: 24px;
+  width: 60px;
+  z-index: 9500;
+}
+
+#top-scroll-icon span {
+  background: #EFF2F7;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 48%;
+  width: 50%;
+}
+
+#top-scroll-icon span:nth-child(1) {
+  right: 33%;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+#top-scroll-icon span:nth-child(2) {
+  left: 33%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

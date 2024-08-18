@@ -1,0 +1,75 @@
+.article-wrap {
+  box-shadow: 0px 10px 10px -6px rgba(84, 156, 219, 0.1);
+  padding-bottom: 8px;
+  transition: 0.2s ease-in-out;
+  width: 24%;
+}
+
+.article-wrap:hover {
+  box-shadow: 0px 12px 10px -8px rgba(84, 156, 219, 0.1);
+  transform: translateY(-2px);
+}
+
+.article-wrap .thumb-container {
+  width: 100%;
+}
+
+.article-wrap .thumb-container img {
+  width: 100%;
+}
+
+.article-wrap .content-container .meta-container {
+  color: #666;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+.article-wrap .content-container .title-container {
+  font-size: 16px;
+  margin: 4px 0;
+  padding: 0 4px;
+  width: 100%;
+}
+
+.article-wrap .content-container .title-container h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article-wrap .content-container .view-more-wrap {
+  border-bottom: 1px solid #666;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 4px 0;
+  position: relative;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  width: 60%;
+}
+
+.article-wrap .content-container .view-more-wrap::after {
+	background: #666;
+	bottom: 4px;
+	display: block;
+	height: 1px;
+	position: absolute;
+	right: -3px;
+	rotate: 40deg;
+	width: 16px;
+  content: "";
+}
+
+.article-wrap .content-container .view-more-wrap a {
+  display: inline-block;
+  width: 100%;
+}
+
+.article-wrap .content-container .view-more-wrap:hover {
+  letter-spacing: 4px;
+  opacity: 0.7;
+  width: 75%;
+}
